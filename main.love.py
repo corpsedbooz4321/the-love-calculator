@@ -25,9 +25,9 @@ while True:
         girl = input("Enter your Girlfriend's name🚺: ")
         if not girl.replace(" ", "").isalpha():
             raise ValueError
-        print("\nKEEP IN MIND THAT THIS IS JUST A SIMULATOR❗")
-        input("\nto view the love score press enter..")
-        print("==========YOUR LOVE SCORE==========")
+        print("\nKEEP IN MIND THAT THIS IS JUST A SIMULATION❗")
+        input("to view the love score press enter..")
+        print("\n==========YOUR LOVE SCORE==========")
         LOVE()
         xx = input("\nDo you wish to continue...(Yes/No): ").lower()
         if xx == "yes":
@@ -35,7 +35,7 @@ while True:
         elif xx == "no":
             break
     except ValueError:
-        print("Invalid input....enter a valid name.")
+        print("\nInvalid input....enter a valid name.")
 
      
     
