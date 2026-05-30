@@ -1,24 +1,41 @@
 #simple interest calculator
+print("\n======================THE LOVE CALCULATOR======================")
 
-while True:
-    P = float(input("principal: "))
-    R = float(input("rate: "))
-    T = float (input("time: "))
+def LOVE():#All the calculation part. 
+    import random
+    num = random.randint(0,100)
 
-    #calculation part
-    print(P*R*T/100,"is your simple interest")
-    
-    
+    print(num, "is your love score!")
 
-    xx = input("if you want to continue press(Y)😀 or if you want to exit(N)😶.......").lower()
-    if xx == "y":
-       continue
-
-    elif xx == "n":
-       break
+    if(num >= 90):
+        print("You are made for each other🥳💖") 
+    elif(num < 90 and num > 70):
+        print("You both are heading to the path of each others heart!🥰")
+    elif(num < 70 and num >= 40):
+        print("You both need to try to understand each other, btw it'll be fine!😃")
     else:
-        print("invalid input")
-        continue
+        print("it'd would be better if you guys focus on your studies!🤡 ")
+
+#taking users input.
+while True:
+    try:
+        boy = input("\nEnter your name🚹: ")
+        if not boy.replace(" ","").isalpha():
+            raise ValueError
+        girl = input("Enter your Girlfriend's name🚺: ")
+        if not girl.replace(" ", "").isalpha():
+            raise ValueError
+        print("\nKEEP IN MIND THAT THIS IS JUST A SIMULATOR❗")
+        input("\nto view the love score press enter..")
+        print("==========YOUR LOVE SCORE==========")
+        LOVE()
+        xx = input("\nDo you wish to continue...(Yes/No): ").lower()
+        if xx == "yes":
+            continue
+        elif xx == "no":
+            break
+    except ValueError:
+        print("Invalid input....enter a valid name.")
 
      
     
